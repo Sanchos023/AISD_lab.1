@@ -1,6 +1,9 @@
 ﻿#ifndef VECTOR_TPP
 #define VECTOR_TPP
 
+
+// Конструкторы 
+
 template<typename T>
 Vector<T>::Vector(size_t size, const T& value) : size_(size) {
     if (size == 0) {
@@ -62,6 +65,8 @@ Vector<T>::Vector(size_t size, const T& lower, const T& upper) : size_(size) {
         }
     }
 }
+
+
 
 template<typename T>
 Vector<T>::Vector(const Vector& other) : size_(other.size_) {
